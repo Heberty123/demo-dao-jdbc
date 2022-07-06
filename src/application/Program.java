@@ -1,5 +1,6 @@
 package application;
 
+import Model.entities.Department;
 import db.DB;
 import db.DbException;
 import db.DbIntegrityException;
@@ -12,9 +13,8 @@ public class Program {
 
     public static void main(String[] argc){
 
-        Connection conn = null;
-        Statement st = null;
-
+        Department obj = new Department(1, "books");
+        System.out.println(obj);
 
     }
 }
